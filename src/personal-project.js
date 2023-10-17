@@ -1,15 +1,13 @@
 import { LitElement, html, css } from 'lit';
 
-export class PersonalProject extends LitElement {
-  static get properties() {
-    return {
-      name: { type: String },
-      active: {Type: Boolean, reflect: true}
-    };
-  }
+const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
+  
+class PersonalProject extends LitElement {
+  static properties = {
+    header: { type: String },
+    }
 
-static get styles() {
-  return css`
+static styles = css`
     :host {
       min-height: 100vh;
       display: flex;
@@ -23,28 +21,53 @@ static get styles() {
       text-align: center;
       background-color: var(--personal-project-background-color);
     }
-    .header{
+    .nat-qual header{
       font-size: 40px;
       color: green;
       border: 0 14 14 0 solid black;
     }
 
-
-    textarea{
-      background-color: blue;
+    .nat-qual textarea{
+      background-color: lightblue;
+      display: block;
+      font-size: 20px;
     } 
-  `;
-}
+    .nat-qual form{
+      position: absolute;
+      color: green;
+      top: 62px;   
+      right: 780px;
+    }
+  ;`
+
   constructor() {
     super();
-    this.header = 'Qualifting Total Calculator';
+    this.header = 'My app';
     
   }
 
   render() {
     return html`
-      <script type="module"></script>
-      
+      <main>
+        <div class="nat-qual">
+          <header id="header">Qualifting Total Calculator</header>
+          <textarea id="unit">Unit</textarea>
+          <textarea id="gender">Gender</textarea>
+          <textarea id="weight-class">Weight Class</textarea>
+          <textarea id="squat">Squat</textarea>
+          <textarea id="bench">Bench</textarea>
+          <textarea id="dead-lift">Dead Lift</textarea>
+          <textarea id="total">Total</textarea>
+          <textarea id="distance-from-total">Distance from Total</textarea>
+        </div>
+
+        <form id="unit-KGorLBS" action="/url" method="get">
+          <label  for="Unit"> Please enter KG OR LBS:</label>
+              <input type="text" name="username" minlength="1" maxlength="20" required>
+          <button type="submit">Submit</button>  
+        </form>
+      </main>
+
       <p class="app-footer">
         🚽 Made with love by
         <a
@@ -58,4 +81,4 @@ static get styles() {
   }
 }
 
-//customElements.define('personal-project', PersonalProject);
+customElements.define('personal-project', PersonalProject);
