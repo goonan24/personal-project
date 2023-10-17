@@ -50,15 +50,15 @@ static styles = css`
     return html`
       <main>
         <div class="nat-qual">
-          <header id="header">Qualifting Total Calculator</header>
-          <textarea id="unit">Unit</textarea>
-          <textarea id="gender">Gender</textarea>
-          <textarea id="weight-class">Weight Class</textarea>
-          <textarea id="squat">Squat</textarea>
-          <textarea id="bench">Bench</textarea>
-          <textarea id="dead-lift">Dead Lift</textarea>
-          <textarea id="total">Total</textarea>
-          <textarea id="distance-from-total">Distance from Total</textarea>
+          <header class="header">Qualifting Total Calculator</header>
+          <textarea class="unit">Unit</textarea>
+          <textarea class="gender">Gender</textarea>
+          <textarea class="weight-class">Weight Class</textarea>
+          <textarea class="squat">Squat</textarea>
+          <textarea class="bench">Bench</textarea>
+          <textarea class="dead-lift">Dead Lift</textarea>
+          <textarea class="total">Total</textarea>
+          <textarea class="distance-from-total">Distance from Total</textarea>
         </div>
 
         <form id="unit-KGorLBS" action="/url" method="get">
