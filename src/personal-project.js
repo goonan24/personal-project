@@ -80,7 +80,20 @@ static styles = css`
       top: 320px;   
       right: 100px;
       font-size: 15px;
-
+    }
+    div.Total{
+      position: absolute;
+      color: green;
+      top: 380px;   
+      right:170px;
+      font-size: 15px;
+    }
+    div.Dis-Total{
+      position: absolute;
+      color: green;
+      top: 420px;   
+      right:-20px;
+      font-size: 15px;
     }
   ;`
 
@@ -122,31 +135,50 @@ static styles = css`
         <div class="weight-class">
           <form class="weight-class" action="/url" method="get">
             <label  for="weight-class"> Weight Class is KG</label>
-                <input type="text" name="weight-class" minlength="1" maxlength="5" required>
+                <input type="number" name="weight-class" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
           </form>
         </div>
         <div class="squat">
           <form class="squat" action="/url" method="get">
             <label  for="squat"> Squat Total</label>
-                <input type="text" name="squat" minlength="1" maxlength="5" required>
+                <input type="number" name="squat" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
           </form>
         </div>
         <div class="bench">
           <form class="bench" action="/url" method="get">
             <label  for="bench"> Bench Total</label>
-                <input type="text" name="bench" minlength="1" maxlength="5" required>
+                <input type="number" name="bench" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
           </form>
         </div>
         <div class="deadlift">
           <form class="deadlift" action="/url" method="get">
             <label  for="deadlift"> Deadlift Total</label>
-                <input type="text" name="deadlift" minlength="1" maxlength="5" required>
+                <input type="number" name="deadlift" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
           </form>
         </div>
+        <div class="Total">
+          <label for="Total">Your total is </label>
+          <input type="number" name="display-total">
+        </div>
+        <div class="Dis-Total">
+          <label for="Dis-Total"> How far above or below the total you are </label>
+          <input type="number" name="display-total">
+            <script>
+              function add(){
+                var s = parseInt(document.getElementsByName('squat')[0].value);
+                var b = parseInt(document.getElementsByName('bench')[0].value);
+                var d = parseInt(document.getElementsByName('deadlift')[0].value);
+                var result = s+b+d;
+                document.getElementsByName('Dis-Total')[0].value= result;
+            }
+            </script>
+        </div>
+
+
       </main>
 
       <p class="app-footer">
