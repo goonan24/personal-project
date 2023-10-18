@@ -162,20 +162,27 @@ static styles = css`
         </div>
         <div class="Total">
           <label for="Total">Your total is </label>
-          <input type="number" name="display-total">
+          <input type="number" name="display-total" id="display-total">
+          <script>
+            function calculate() {
+              var s = parseInt(document.querySelector(".squat").value);
+              var b = parseInt(document.querySelector(".bench").value);
+              var d = parseInt(document.querySelector(".dead-lift").value);
+
+              if (!isNaN(s) && !isNaN(b) && !isNaN(d)) {
+                var result = s + b + d;
+                document.querySelector("#display-total").value = result;
+              } else {
+                alert('Please enter valid numbers for squat, bench, and dead-lift.');
+              }
+            }
+          </script>
+          <button onclick="calculate()" type="button">Calculate</button>
         </div>
+
         <div class="Dis-Total">
           <label for="Dis-Total"> How far above or below the total you are </label>
           <input type="number" name="display-total">
-            <script>
-              function add(){
-                var s = parseInt(document.getElementsByName('squat')[0].value);
-                var b = parseInt(document.getElementsByName('bench')[0].value);
-                var d = parseInt(document.getElementsByName('deadlift')[0].value);
-                var result = s+b+d;
-                document.getElementsByName('Dis-Total')[0].value= result;
-            }
-            </script>
         </div>
 
 
