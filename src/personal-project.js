@@ -29,6 +29,7 @@ static styles = css`
 
     .nat-qual textarea{
       background-color: lightblue;
+      position: relative;
       display: block;
       font-size: 20px;
       width: 157px;
@@ -38,8 +39,9 @@ static styles = css`
     div.unit{
       position: absolute;
       color: green;
+      left: 200px;
       top: 62px;   
-      right: 100px;
+      right: 200px;
       font-size: 15px;
       
     }
@@ -74,7 +76,7 @@ static styles = css`
       font-size: 15px;
 
     }
-    div.deadlift{
+    div.dl{
       position: absolute;
       color: green;
       top: 320px;   
@@ -85,7 +87,7 @@ static styles = css`
       position: absolute;
       color: green;
       top: 380px;   
-      right:170px;
+      right:100px;
       font-size: 15px;
     }
     div.Dis-Total{
@@ -95,12 +97,35 @@ static styles = css`
       right:-20px;
       font-size: 15px;
     }
+    div.total-needed{
+      position: absolute;
+      color: green;
+      top: 460px;   
+      right:-20px;
+      font-size: 15px;
+    }
+    
   ;`
 
   constructor() {
     super();
-    this.header = 'My app';
-    
+    this.header = 'My app'; 
+    this.squatValue = 0;
+    this.benchValue = 0;
+    this.deadliftValue = 0;
+  }
+
+  calculate() {
+    const squat = parseInt(this.squatValue);
+    const bench = parseInt(this.benchValue);
+    const deadlift = parseInt(this.deadliftValue);
+
+    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift)) {
+      const sum = squat+bench+deadlift;
+      this.shadowRoot.querySelector('#display-total').value = sum;
+    } else {
+      alert('Please enter valid numbers for squat, bench, and deadlift.');
+    }
   }
 
   render() {
@@ -115,77 +140,96 @@ static styles = css`
           <textarea class="bench">Bench</textarea>
           <textarea class="dead-lift">Deadlift</textarea>
           <textarea class="total">Total</textarea>
+          <textarea class="total-needed">Total Needed</textarea>
           <textarea class="distance-from-total">Distance from Total</textarea>
         </div>
 
         <div class="unit">
-          <form class="unit" action="/url" method="get">
+          <!--form class="unit" action="/url" method="get">
             <label  for="Unit"> KG OR LBS:</label>
                 <input type="text" name="username" minlength="1" maxlength="20" required>
             <button type="submit">Submit</button>  
-          </form>
+          </form -->
+          <select>
+            <option value="select">select</option>
+            <option value="KG">KG</option>
+            <option value="Lbs">LBS</option>
+          </select>
         </div>
         <div class="gender">
-          <form class="Gender" action="/url" method="get">
+          <!--form class="Gender" action="/url" method="get">
             <label  for="Gender"> Male, Female, or RX</label>
                 <input type="text" name="gender" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
-          </form>
+          </form -->
+          <select>
+            <option value="select">select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="RX">RX</option>
+          </select>
         </div>
         <div class="weight-class">
-          <form class="weight-class" action="/url" method="get">
+          <!--form class="weight-class" action="/url" method="get">
             <label  for="weight-class"> Weight Class is KG</label>
                 <input type="number" name="weight-class" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
-          </form>
+          </form-->
+          <select id="male">
+            <option value="male">male</option>
+            <option value="52">52</option>
+            <option value="56">56</option>
+            <option value="60">60</option>
+            <option value="67.5">67.5</option>
+            <option value="75">75</option>
+            <option value="82.5">82.5</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+            <option value="110">125</option>
+            <option value="140">140</option>
+            <option value="140+">140+</option>
+          </select>
+          <select id="female">
+            <option value="female">female</option>
+            <option value="44">44</option>
+            <option value="48">48</option>
+            <option value="52">52</option>
+            <option value="56">56</option>
+            <option value="60">60</option>
+            <option value="67.5">67.5</option>
+            <option value="75">75</option>
+            <option value="82.5">82.5</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+            <option value="100+">100+</option>
+          </select>
         </div>
         <div class="squat">
-          <form class="squat" action="/url" method="get">
-            <label  for="squat"> Squat Total</label>
-                <input type="number" name="squat" minlength="1" maxlength="5" required>
-            <button type="submit">Submit</button>  
-          </form>
+          <label for="squat">Squat Total</label>
+          <input type="number" name="squat" id="squat" minlength="1" maxlength="5" required @input="${(e) => (this.squatValue = e.target.value)}" >
         </div>
         <div class="bench">
-          <form class="bench" action="/url" method="get">
-            <label  for="bench"> Bench Total</label>
-                <input type="number" name="bench" minlength="1" maxlength="5" required>
-            <button type="submit">Submit</button>  
-          </form>
+          <label for="bench">Bench Total</label>
+          <input type="number" name="bench" id="bench" minlength="1" maxlength="5" required @input="${(e) => (this.benchValue = e.target.value)}">
         </div>
-        <div class="deadlift">
-          <form class="deadlift" action="/url" method="get">
-            <label  for="deadlift"> Deadlift Total</label>
-                <input type="number" name="deadlift" minlength="1" maxlength="5" required>
-            <button type="submit">Submit</button>  
-          </form>
+        <div class="dl">
+          <label for="dl">Deadlift Total</label>
+          <input type="number" name="dl" id="dl" minlength="1" maxlength="5" required @input="${(e) => (this.deadliftValue = e.target.value)}">
         </div>
         <div class="Total">
           <label for="Total">Your total is </label>
           <input type="number" name="display-total" id="display-total">
-          <script>
-            function calculate() {
-              var s = parseInt(document.querySelector(".squat").value);
-              var b = parseInt(document.querySelector(".bench").value);
-              var d = parseInt(document.querySelector(".dead-lift").value);
-
-              if (!isNaN(s) && !isNaN(b) && !isNaN(d)) {
-                var result = s + b + d;
-                document.querySelector("#display-total").value = result;
-              } else {
-                alert('Please enter valid numbers for squat, bench, and dead-lift.');
-              }
-            }
-          </script>
-          <button onclick="calculate()" type="button">Calculate</button>
+          <button @click="${this.calculate}" type="button">Calculate</button>
+        </div>
+        <div class="total-needed">
+          <label for="total-needed">Total Needed </label>
+          <input type="number" name="total-needed" id="display-total">
         </div>
 
         <div class="Dis-Total">
           <label for="Dis-Total"> How far above or below the total you are </label>
           <input type="number" name="display-total">
         </div>
-
-
       </main>
 
       <p class="app-footer">
