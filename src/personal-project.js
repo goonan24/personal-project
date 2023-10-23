@@ -49,16 +49,16 @@ static styles = css`
       position: absolute;
       color: green;
       top: 115px;   
-      right: 200px;
+      right: 10px;
       left: 200px;
       font-size: 15px;
     }
-    div.weight-class{
+    div.weight{
       position: absolute;
       color: green;
       top: 170px;   
-      right: 200px;
-      left: 200px;
+      right: 110px;
+      left: 300px;
       font-size: 15px;
 
     }
@@ -128,7 +128,7 @@ static styles = css`
     const squat = parseInt(this.squatValue);
     const bench = parseInt(this.benchValue);
     const deadlift = parseInt(this.deadliftValue);
-
+   
     if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift)) {
       const sum = squat+bench+deadlift;
       this.shadowRoot.querySelector('#display-total').value = sum;
@@ -160,7 +160,7 @@ static styles = css`
       const disfromtot = totneeded - total;
       this.shadowRoot.querySelector('#Dis-total').value = disfromtot;
     }
-    */
+    
     const squat = parseInt(this.querySelector('#squat').value);
     const bench = parseInt(this.querySelector('#bench').value);
     const deadlift = parseInt(this.querySelector('#dl').value);
@@ -172,6 +172,133 @@ static styles = css`
         totneeded = 485; // You might want to adjust this for different genders
         const disfromtot = totneeded - total;
         this.shadowRoot.querySelector('#dis-total').value = disfromtot;
+    }
+        */
+    
+    const squat = parseDouble(this.squatValue);
+    const bench = parseDouble(this.benchValue);
+    const deadlift = parseDouble(this.deadliftValue);
+   
+    const gender = this.gender;
+    const weight = this.weight;
+
+    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "52") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 270 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    }
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "56") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 340- sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    }
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "60") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 375 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "67.5") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 485 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "75") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 565 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "82.5") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 610 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "90") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 635 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "100") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 650 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "110") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 655 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "125") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 660 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 665 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140+") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 655 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "44") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 150 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    }
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "48") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 175- sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    }
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "52") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 210 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "56") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 240 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "60") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 270 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "67.5") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 295 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "75") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 325 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "82.5") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 335 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "90") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 345 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 350 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    } 
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100+") {
+      const sum = squat+bench+deadlift;
+      const disFromTot = 350 - sum;
+      this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
+    }
+    else {
+      alert('Please enter valid numbers for squat, bench, and deadlift.');
     }
   }
 
@@ -208,20 +335,23 @@ static styles = css`
             <label  for="Gender"> Male, Female, or RX</label>
                 <input type="text" name="gender" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
-          </form -->
+          </form 
           <select>
             <option value="select">select</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="RX">RX</option>
-          </select>
+          </select -->
+          <label for="gender">Gender Male or Female</label>
+          <input type="text" name="gender" id="gender" minlength="1" maxlength="6" required @input="${(e) => (this.gender = e.target.value)}" >
+        
         </div>
-        <div class="weight-class" id="weight-class">
+        <div class="weight" id="weight">
           <!--form class="weight-class" action="/url" method="get">
             <label  for="weight-class"> Weight Class is KG</label>
                 <input type="number" name="weight-class" minlength="1" maxlength="5" required>
             <button type="submit">Submit</button>  
-          </form-->
+          </form>
           <select id="male">
             <option value="male">male</option>
             <option value="52">52</option>
@@ -249,23 +379,25 @@ static styles = css`
             <option value="90">90</option>
             <option value="100">100</option>
             <option value="100+">100+</option>
-          </select>
+          </select-->
+          <label for="weight">Enter Weight Class</label>
+          <input type="text" name="weight" id="weight" minlength="1" maxlength="5" step=".01" required @input="${(e) => (this.weight = e.target.value)}" >
         </div>
         <div class="squat">
           <label for="squat">Squat Total</label>
-          <input type="number" name="squat" id="squat" minlength="1" maxlength="5" required @input="${(e) => (this.squatValue = e.target.value)}" >
+          <input type="number" name="squat" id="squat" minlength="1" maxlength="5" step=".01" required @input="${(e) => (this.squatValue = e.target.value)}" >
         </div>
         <div class="bench">
           <label for="bench">Bench Total</label>
-          <input type="number" name="bench" id="bench" minlength="1" maxlength="5" required @input="${(e) => (this.benchValue = e.target.value)}">
+          <input type="number" name="bench" id="bench" minlength="1" maxlength="5" step=".01" required @input="${(e) => (this.benchValue = e.target.value)}">
         </div>
         <div class="dl">
           <label for="dl">Deadlift Total</label>
-          <input type="number" name="dl" id="dl" minlength="1" maxlength="5" required @input="${(e) => (this.deadliftValue = e.target.value)}">
+          <input type="number" name="dl" id="dl" minlength="1" maxlength="5" step=".01" required @input="${(e) => (this.deadliftValue = e.target.value)}">
         </div>
         <div class="Total">
           <label for="Total">Your total is </label>
-          <input type="number" name="display-total" id="display-total">
+          <input type="number" name="display-total" id="display-total" step=".01">
           <button @click="${this.calculate}" type="button">Calculate</button>
         </div>
         <div class="total-needed">
