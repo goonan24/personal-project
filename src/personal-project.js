@@ -450,14 +450,8 @@ static styles = css`
         </div>
       </main>
 
-      <p class="app-footer">
-        🚽 Made with love by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/open-wc"
-          >open-wc</a
-        >.
+      <p class="app-footer" href="">
+        <button>HOME</button>
       </p>
     `;
   }
