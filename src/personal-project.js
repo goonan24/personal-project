@@ -23,8 +23,9 @@ static styles = css`
     }
     .nat-qual header{
       font-size: 40px;
-      color: green;
+      color: white;
       border: 0 14 14 0 solid black;
+      background-color: navy;
     }
 
     .nat-qual textarea{
@@ -38,7 +39,7 @@ static styles = css`
     } 
     div.unit{
       position: absolute;
-      color: green;
+      color: black;
       left: 200px;
       top: 60px;   
       right: 200px;
@@ -111,6 +112,15 @@ static styles = css`
       right: -220px;
       left: 150px;
       font-size: 15px;
+    }
+    
+    .nat-qual textarea{
+      color: white;
+      background-color: navy;
+    }
+
+    label{
+      color: black;
     }
     
   ;`
