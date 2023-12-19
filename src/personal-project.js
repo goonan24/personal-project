@@ -450,7 +450,7 @@ static styles = css`
         </div>
       </main>
 
-      <p class="app-footer" href="">
+      <p class="app-footer" src="https://home-page-umber-six.vercel.app/">
         <button>HOME</button>
       </p>
     `;
