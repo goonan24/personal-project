@@ -461,7 +461,7 @@ static styles = css`
       </main>
 
       <p class="app-footer" src="https://home-page-umber-six.vercel.app/">
-        <button link="https://home-page-goonan24.vercel.app/">HOME</button>
+        <button href="https://home-page-goonan24.vercel.app/">HOME</button>
       </p>
     `;
   }
