@@ -37,19 +37,11 @@ static styles = css`
       height: 47px;
       font-family: sans-serif; 
     } 
-    div.unit{
-      position: absolute;
-      color: black;
-      left: 200px;
-      top: 60px;   
-      right: 200px;
-      font-size: 15px;
-      
-    }
+  
     div.gender{
       position: absolute;
       color: green;
-      top: 115px;   
+      top: 68px;   
       right: 10px;
       left: 200px;
       font-size: 15px;
@@ -57,8 +49,8 @@ static styles = css`
     div.weight{
       position: absolute;
       color: green;
-      top: 170px;   
-      right: 110px;
+      top: 110px;   
+      right: 140px;
       left: 300px;
       font-size: 15px;
 
@@ -66,7 +58,7 @@ static styles = css`
     div.squat{
       position: absolute;
       color: green;
-      top: 220px;   
+      top: 170px;   
       right: 90px;
       left: 200px;
       font-size: 15px;
@@ -75,7 +67,7 @@ static styles = css`
     div.bench{
       position: absolute;
       color: green;
-      top: 270px;   
+      top: 220px;   
       right: 90px;
       left: 200px;
       font-size: 15px;
@@ -84,7 +76,7 @@ static styles = css`
     div.dl{
       position: absolute;
       color: green;
-      top: 320px;   
+      top: 275px;   
       right: 85px;
       left: 200px;
       font-size: 15px;
@@ -92,7 +84,7 @@ static styles = css`
     div.Total{
       position: absolute;
       color: green;
-      top: 380px;   
+      top: 326px;   
       right: 20px;
       left: 200px;
       font-size: 15px;
@@ -100,7 +92,7 @@ static styles = css`
     div.total-needed{
       position: absolute;
       color: green;
-      top: 430px;   
+      top: 380px;   
       right: 10px;
       left: 200px;
       font-size: 15px;
@@ -108,7 +100,7 @@ static styles = css`
     div.Dis-Total{
       position: absolute;
       color: green;
-      top: 475px;   
+      top: 430px;   
       right: -220px;
       left: 150px;
       font-size: 15px;
@@ -404,7 +396,6 @@ static styles = css`
       <main>
         <div class="nat-qual">
           <header class="header">Qualifting Total Calculator</header>
-          <textarea class="unit">Unit</textarea>
           <textarea class="gender">Gender</textarea>
           <textarea class="weight-class">Weight Class</textarea>
           <textarea class="squat">Squat</textarea>
@@ -415,13 +406,6 @@ static styles = css`
           <textarea class="distance-from-total">Distance from Total</textarea>
         </div>
 
-        <div class="unit" id="unit">
-          <select>
-            <option value="select">select</option>
-            <option value="KG">KG</option>
-            <option value="Lbs">LBS</option>
-          </select>
-        </div>
         <div class="gender" id="gender">
           <label for="gender">Gender Male or Female</label>
           <input type="text" name="gender" id="gender" minlength="1" maxlength="6" required @input="${(e) => (this.gender = e.target.value)}" >
@@ -460,8 +444,8 @@ static styles = css`
         </div>
       </main>
 
-      <p class="app-footer" src="https://home-page-umber-six.vercel.app/">
-        <button href="https://home-page-goonan24.vercel.app/">HOME</button>
+      <p class="app-footer">
+        <a href="https://home-page-goonan24.vercel.app/" target="_blank">Home Page</a>
       </p>
     `;
   }
