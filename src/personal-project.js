@@ -148,117 +148,117 @@ static styles = css`
     const gender = this.gender;
     const weight = this.weight;
 
-    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "52") {
+    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "52") {
       const sum = squat+bench+deadlift;
       const disFromTot = 270 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "56") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "56") {
       const sum = squat+bench+deadlift;
       const disFromTot = 340- sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "60") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "60") {
       const sum = squat+bench+deadlift;
       const disFromTot = 375 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "67.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "67.5") {
       const sum = squat+bench+deadlift;
       const disFromTot = 485 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "75") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "75") {
       const sum = squat+bench+deadlift;
       const disFromTot = 565 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "82.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "82.5") {
       const sum = squat+bench+deadlift;
       const disFromTot = 610 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "90") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "90") {
       const sum = squat+bench+deadlift;
       const disFromTot = 635 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "100") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "100") {
       const sum = squat+bench+deadlift;
       const disFromTot = 650 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "110") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "110") {
       const sum = squat+bench+deadlift;
       const disFromTot = 655 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "125") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "125") {
       const sum = squat+bench+deadlift;
       const disFromTot = 660 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "140") {
       const sum = squat+bench+deadlift;
       const disFromTot = 665 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140+") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "140+") {
       const sum = squat+bench+deadlift;
       const disFromTot = 655 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "44") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "44") {
       const sum = squat+bench+deadlift;
       const disFromTot = 150 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "48") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "48") {
       const sum = squat+bench+deadlift;
       const disFromTot = 175- sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "52") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "52") {
       const sum = squat+bench+deadlift;
       const disFromTot = 210 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "56") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "56") {
       const sum = squat+bench+deadlift;
       const disFromTot = 240 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "60") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "60") {
       const sum = squat+bench+deadlift;
       const disFromTot = 270 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "67.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "67.5") {
       const sum = squat+bench+deadlift;
       const disFromTot = 295 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "75") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "75") {
       const sum = squat+bench+deadlift;
       const disFromTot = 325 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "82.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "82.5") {
       const sum = squat+bench+deadlift;
       const disFromTot = 335 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "90") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "90") {
       const sum = squat+bench+deadlift;
       const disFromTot = 345 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "100") {
       const sum = squat+bench+deadlift;
       const disFromTot = 350 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100+") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "100+") {
       const sum = squat+bench+deadlift;
       const disFromTot = 350 - sum;
       this.shadowRoot.querySelector('#Dis-total').value = disFromTot;
@@ -276,113 +276,113 @@ static styles = css`
     const gender = this.gender;
     const weight = this.weight;
 
-    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "52") {
+    if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "52") {
       const totNeeded = 270;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "56") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "56") {
       const totNeeded = 340;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "60") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "60") {
 
       const totNeeded = 375;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "67.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "67.5") {
 
       const totNeeded = 485;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "75") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "75") {
 
       const totNeeded = 565;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "82.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "82.5") {
 
       const totNeeded = 610;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "90") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "90") {
 
       const totNeeded = 635;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "100") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "100") {
 
       const totNeeded = 650;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "110") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "110") {
 
       const totNeeded = 655;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "125") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "125") {
 
       const totNeeded = 660;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "140") {
 
       const totNeeded = 665;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Male" && weight === "140+") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Man" && weight === "140+") {
 
       const totNeeded = 655;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "44") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "44") {
 
       const totNeeded = 150;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "48") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "48") {
 
       const totNeeded = 175;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     }
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "52") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "52") {
 
       const totNeeded = 210;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "56") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "56") {
 
       const totNeeded = 240;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "60") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "60") {
 
       const totNeeded = 270;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "67.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "67.5") {
 
       const totNeeded = 295;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "75") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "75") {
 
       const totNeeded = 325;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "82.5") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "82.5") {
 
       const totNeeded = 335;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "90") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "90") {
       const totNeeded = 345;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "100") {
       const totNeeded = 350;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     } 
-    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Female" && weight === "100+") {
+    else if (!isNaN(squat) && !isNaN(bench) && !isNaN(deadlift) && gender === "Women" && weight === "100+") {
       const totNeeded = 350;
       this.shadowRoot.querySelector('#total-needed').value = totNeeded;
     }
@@ -407,7 +407,7 @@ static styles = css`
         </div>
 
         <div class="gender" id="gender">
-          <label for="gender">Gender Male or Female</label>
+          <label for="gender">Gender Man or Women</label>
           <input type="text" name="gender" id="gender" minlength="1" maxlength="6" required @input="${(e) => (this.gender = e.target.value)}" >
         
         </div>
